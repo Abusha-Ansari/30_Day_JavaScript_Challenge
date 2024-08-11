@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#task_manager_container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#input_field {
+    margin-bottom: 20px;
+}
+
+#input_field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#input_field input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#input_field button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#input_field button:hover {
+    background-color: #218838;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.task .delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.task .delete:hover {
+    background-color: #c82333;
+}
+.edit-input {
+    width: calc(100% - 80px);  
+    padding: 5px;
+    margin-right: 10px;
+}
+.edit:hover{
+    background-color: rgb(23, 237, 166);
+    cursor: pointer;
+    
+}
+.edit{
+    border: none;
+    background-color: aquamarine;
+
+}

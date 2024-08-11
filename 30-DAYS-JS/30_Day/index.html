@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+
+    <div class="auth-container" id="auth-container">
+        <div class="form-container" id="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required autocomplete="off">
+                <input type="password" id="loginPassword" placeholder="Password" required autocomplete="off">
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign up here</a></p>
+        </div>
+        
+        <div class="form-container" id="signup-container" style="display:none;">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required autocomplete="off">
+                <input type="email" id="signupEmail" placeholder="Email" required autocomplete="off">
+                <input type="password" id="signupPassword" placeholder="Password" required autocomplete="off">
+                <input type="file" id="signupProfilePicture" accept="image/*">
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Log in here</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="app-container" style="display:none;">
+        <aside class="sidebar">
+            <h2>User Info</h2>
+            <div id="user-info">
+            </div>
+
+            <h2>Notifications</h2>
+            <div id="notifications"></div>
+        </aside>
+
+        <main class="main-content">
+            <div class="post-form">
+                <h2>Create a New Post</h2>
+                <form id="newPostForm">
+                    <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+
+            <div id="posts" class="posts">
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

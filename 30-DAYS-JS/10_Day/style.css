@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+/* #image{
+    visibility: hidden;
+} */
+
+/* #box{
+    height: 100px;
+    width: 100px;
+} */
+
+/* .box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 20px;
+} */
